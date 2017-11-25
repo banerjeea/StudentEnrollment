@@ -1,0 +1,11 @@
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\bin\Debug\netcoreapp2.0\StudentEnrollment.deps.json
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\bin\Debug\netcoreapp2.0\StudentEnrollment.runtimeconfig.json
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\bin\Debug\netcoreapp2.0\StudentEnrollment.runtimeconfig.dev.json
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\bin\Debug\netcoreapp2.0\StudentEnrollment.dll
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\obj\Debug\netcoreapp2.0\StudentEnrollment.csprojResolveAssemblyReference.cache
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\obj\Debug\netcoreapp2.0\StudentEnrollment.csproj.CoreCompileInputs.cache
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\obj\Debug\netcoreapp2.0\StudentEnrollment.AssemblyInfoInputs.cache
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\obj\Debug\netcoreapp2.0\StudentEnrollment.AssemblyInfo.cs
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\bin\Debug\netcoreapp2.0\StudentEnrollment.pdb
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\obj\Debug\netcoreapp2.0\StudentEnrollment.dll
+C:\StudentEnrollment\StudentEnrollment\StudentEnrollment\obj\Debug\netcoreapp2.0\StudentEnrollment.pdb
