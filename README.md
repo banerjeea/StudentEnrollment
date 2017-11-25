@@ -13,6 +13,7 @@ It follows Repository pattern.
 * From [MongoHelpers](https://github.com/banerjeea/StudentEnrollment/tree/master/MongoHelpers) folder, run StartMongoServer.bat. This starts up the server.It assumes your installation location is 
   `C:\Program Files\MongoDB\Server\3.4\bin`
 * Start StartMongoShell.bat then run below commands to create admin user for the app to access your DB;
+
   `use admin`
   `db.createUser( { user: "admin", pwd: "abc123!", roles: [ { role: "root", db: "admin" } ] } )`
 * You may need to restart StartMongoServer.bat.  
