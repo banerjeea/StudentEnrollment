@@ -21,7 +21,7 @@ It follows Repository pattern.
   
 * You may need to restart StartMongoServer.bat.  
 * When Mongo is running successfully, you can run the app from Visul Studio 2017. Import these [Postman requests](https://github.com/banerjeea/StudentEnrollment/tree/master/PostmanRequests).
-* Add at least one Subject, Theatre and Student first before you try to add a Lecture or try to Enroll.
+* Add at least one Subject, Theatre and Student before you try to add a Lecture or try to Enroll.
 * Once you run all requests successfully, the app will create `StudentSystem` database and `Subjects, Theatres, Students` collections inside it. 
 
 ## Improvements Needed:
