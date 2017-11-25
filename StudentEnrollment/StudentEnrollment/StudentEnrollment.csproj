@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Repositories\Enrollment\" />
-    <Folder Include="Repositories\Theatre\" />
     <Folder Include="Repositories\Student\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

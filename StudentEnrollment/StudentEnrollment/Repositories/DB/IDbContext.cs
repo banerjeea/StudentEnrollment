@@ -9,5 +9,7 @@ namespace StudentEnrollment.Repositories.DB
     public interface IDbContext
     {
         IMongoCollection<Models.Subject> Subjects();
+        IMongoCollection<Models.Theatre> Theatres();
+
     }
 }

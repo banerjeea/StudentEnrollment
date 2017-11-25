@@ -11,6 +11,7 @@ using Microsoft.Extensions.Options;
 using StudentEnrollment.Models;
 using StudentEnrollment.Repositories.DB;
 using StudentEnrollment.Repositories.Subject;
+using StudentEnrollment.Repositories.Theatre;
 
 namespace StudentEnrollment
 {
@@ -31,6 +32,7 @@ namespace StudentEnrollment
 
             services.AddSingleton<IDbContext, DbContext>();
             services.AddSingleton<ISubject, Repositories.Subject.Subject>();
+            services.AddSingleton<ITheatre, Repositories.Theatre.Theatre>();
 
 
             services.AddSingleton<IConfiguration>(Configuration);

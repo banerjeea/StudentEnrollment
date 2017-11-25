@@ -23,5 +23,10 @@ namespace StudentEnrollment.Repositories.DB
         {
             return _database.GetCollection<Models.Subject>("Subjects");
         }
+
+        public IMongoCollection<Models.Theatre> Theatres()
+        {
+            return _database.GetCollection<Models.Theatre>("Theatres");
+        }
     }
 }
