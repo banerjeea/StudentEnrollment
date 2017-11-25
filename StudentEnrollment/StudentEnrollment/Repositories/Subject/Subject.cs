@@ -46,5 +46,25 @@ namespace StudentEnrollment.Repositories.Subject
             return list;
 
         }
+
+        public async Task<(int Count, bool updated)> UpdateSubject(Models.Subject sub)
+        {
+            //check if theatre exists
+            var count = await _dbContext.Theatres().Find(x => x.Name == sub.Lecture.Theatre).CountAsync();
+
+            if (count > 0)
+            {
+
+                var result = await _dbContext.Subjects()
+                    .FindOneAndUpdateAsync(
+                        Builders<Models.Subject>.Filter.Eq(e => e.Name, sub.Name),
+                        Builders<Models.Subject>.Update.Set(e => e.Lecture, sub.Lecture)
+                    );
+
+                return result != null ? (1, true) : (1, false);
+            }
+
+            return (0, false);
+        }
     }
 }

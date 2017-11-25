@@ -45,5 +45,26 @@ namespace StudentEnrollment.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+
+        [HttpPost]
+        [Route("AddLecture")]
+        public async Task<IActionResult> AddLecture([FromBody]Models.Subject value)
+        {
+            try
+            {
+                var result = await Subject.UpdateSubject(value);
+                if (result.Count <= 0)
+                    return BadRequest("Theatre doesn't exist");
+                if (!result.updated)
+                    return BadRequest("Subject doesn't exist");
+
+                return Ok();
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }

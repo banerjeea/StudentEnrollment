@@ -15,6 +15,7 @@ namespace StudentEnrollment.Models
         public string Name { get; set; }
         [BsonElement("Students")]
         public List<string> StudentEmail { get; set; }
-
+        [BsonElement("Lecture")]
+        public Lecture Lecture { get; set; }
     }
 }

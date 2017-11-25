@@ -10,6 +10,6 @@ namespace StudentEnrollment.Repositories.DB
     {
         IMongoCollection<Models.Subject> Subjects();
         IMongoCollection<Models.Theatre> Theatres();
-
+        IMongoCollection<Models.Student> Students();
     }
 }

@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using StudentEnrollment.Models;
 using StudentEnrollment.Repositories.DB;
+using StudentEnrollment.Repositories.Student;
 using StudentEnrollment.Repositories.Subject;
 using StudentEnrollment.Repositories.Theatre;
 
@@ -33,6 +34,7 @@ namespace StudentEnrollment
             services.AddSingleton<IDbContext, DbContext>();
             services.AddSingleton<ISubject, Repositories.Subject.Subject>();
             services.AddSingleton<ITheatre, Repositories.Theatre.Theatre>();
+            services.AddSingleton<IStudent, Repositories.Student.Student>();
 
 
             services.AddSingleton<IConfiguration>(Configuration);

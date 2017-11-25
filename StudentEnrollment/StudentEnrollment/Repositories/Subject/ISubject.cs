@@ -9,6 +9,6 @@ namespace StudentEnrollment.Repositories.Subject
     {
         Task AddSubject(Models.Subject sub);
         Task<IEnumerable<Models.Subject>> GetSubjects();
-
+        Task<(int Count, bool updated)> UpdateSubject(Models.Subject sub);
     }
 }
