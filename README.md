@@ -22,9 +22,10 @@ It follows Repository pattern.
 * You may need to restart StartMongoServer.bat.  
 * When Mongo is running successfully, you can run the app from Visul Studio 2017. Import these [Postman requests](https://github.com/banerjeea/StudentEnrollment/tree/master/PostmanRequests).
 * Add at least one Subject, Theatre and Student first before you try to add a Lecture or try to Enroll.
+* Once you run all requests successfully, the app will create `StudentSystem` database and `Subjects, Theatres, Students` collections inside it. 
 
 ## Improvements Needed:
-* Due to time constraints, I couldn't implement a check on student's enrollment hours to stop them from enrolling when it's over 10 hours/week. Here is what I would hav done;
+* Due to time constraints, I couldn't implement a check on student's enrollment hours to stop them from enrolling when it's over 10 hours/week. Here is what I would have done;
 
    Add `public int WeeklyEnrolledHours { get; set; }` to [Student.cs](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Student.cs)
 
@@ -33,3 +34,10 @@ It follows Repository pattern.
   `public int Duration { get; set; }` X `public int NoOfLecWeekly { get; set; }` per lecture. 
 
   Run a check during [enrollment](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Repositories/Enrollment/Enrollment.cs#L35)
+  
+* Add model validations and error handling.
+* Add test cases.
+* Move database credentials out of appsettings.config and consider using secret management through KMS.
+* Add indexes on collections as needed, making sure emails, subjects, theatres, enrollments are unique.
+* Add logging.
+  
