@@ -41,3 +41,12 @@ It follows Repository pattern.
 * Add indexes on collections as needed, making sure students, subjects, theatres and enrollments are unique.
 * Add logging.
   
+## What I Googled:
+``` var result = await _dbContext.Students()
+                        .FindOneAndUpdateAsync(
+                            Builders<Models.Student>.Filter.Eq(e => e.Email, enroll.Email),
+                            Builders<Models.Student>.Update.Push(e => e.Enrollments, enroll.Subject)
+                        );```
+                        
+In thhis code snippet Update.Push doesn't work if an element is set to null. It requires an empty list. I had to look it up and update my logic accordingly.                        
+  
