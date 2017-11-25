@@ -13,7 +13,7 @@ It follows Repository pattern.
 * From [MongoHelpers](https://github.com/banerjeea/StudentEnrollment/tree/master/MongoHelpers) folder, run StartMongoServer.bat. This starts up the server.It assumes your installation location is 
 
   `C:\Program Files\MongoDB\Server\3.4\bin`
-* Start StartMongoShell.bat then run below commands to create admin user for the app to access your DB;
+* Run StartMongoShell.bat then execute below commands to create admin user for the app to access your DB;
 
   `use admin`
   
@@ -38,6 +38,6 @@ It follows Repository pattern.
 * Add model validations and error handling.
 * Add test cases.
 * Move database credentials out of appsettings.config and consider using secret management through KMS.
-* Add indexes on collections as needed, making sure emails, subjects, theatres, enrollments are unique.
+* Add indexes on collections as needed, making sure students, subjects, theatres and enrollments are unique.
 * Add logging.
   
