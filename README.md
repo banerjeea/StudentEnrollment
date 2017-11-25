@@ -26,7 +26,7 @@ It follows Repository pattern.
 ## Improvements Needed:
 * Due to time constraints, I couldn't implement a check on student's enrollment hours to stop them from enrolling when it's over 10 hours/week. Here is what I would hav done;
 
-   Add `public int WeeklyEnrolledHours { get; set; }` to [Student.cs]   (https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Student.cs)
+   Add `public int WeeklyEnrolledHours { get; set; }` to [Student.cs](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Student.cs)
 
    Update this field each time a student register. The value would be a multiplication of below fields from [Lecture.cs](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Lecture.cs) object;
 
