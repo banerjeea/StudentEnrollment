@@ -8,7 +8,7 @@ It's a .Net Core WEB API app compatible with VS 2017.
 It follows Repository pattern.
 
 ## How to Run: 
-* Make sure VS 2017 is isntalled.
+* Make sure VS 2017 is installed.
 * Install [MongoDB](https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-windows/).
 * From [MongoHelpers](https://github.com/banerjeea/StudentEnrollment/tree/master/MongoHelpers) folder, run StartMongoServer.bat. This starts up the server.It assumes your installation location is 
 
