@@ -16,6 +16,7 @@ It follows Repository pattern.
 * Start StartMongoShell.bat then run below commands to create admin user for the app to access your DB;
 
   `use admin`
+  
   `db.createUser( { user: "admin", pwd: "abc123!", roles: [ { role: "root", db: "admin" } ] } )`
   
 * You may need to restart StartMongoServer.bat.  
@@ -25,10 +26,10 @@ It follows Repository pattern.
 ## Improvements Needed:
 * Due to time constraints, I couldn't implement a check on student's enrollment hours to stop them from enrolling when it's over 10 hours/week. Here is what I would hav done;
 
-Add `public int WeeklyEnrolledHours { get; set; }` to [Student.cs](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Student.cs)
+   Add `public int WeeklyEnrolledHours { get; set; }` to [Student.cs]   (https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Student.cs)
 
-Update this field each time a student register. The value would be a multiplication of below fields from [Lecture.cs](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Lecture.cs) object;
+   Update this field each time a student register. The value would be a multiplication of below fields from [Lecture.cs](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Models/Lecture.cs) object;
 
-`public int Duration { get; set; }` X `public int NoOfLecWeekly { get; set; }` per lecture. 
+  `public int Duration { get; set; }` X `public int NoOfLecWeekly { get; set; }` per lecture. 
 
-Run a check during [enrollment](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Repositories/Enrollment/Enrollment.cs#L35)
+  Run a check during [enrollment](https://github.com/banerjeea/StudentEnrollment/blob/master/StudentEnrollment/StudentEnrollment/Repositories/Enrollment/Enrollment.cs#L35)
