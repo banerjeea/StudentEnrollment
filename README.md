@@ -2,7 +2,7 @@
 This application is written in response to problem 2.1 RESTful Web API to address student enrollment
 
 ## Technology:
-It's a .Net Core WEB API app compatible with VS 2017.
+It's a .Net Core Web API app compatible with VS 2017.
 
 ## Design Pattern:
 It follows Repository pattern.
